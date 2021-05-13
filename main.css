@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+     Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.4;
+    background-attachment: fixed;
+    background-image: url(images/image.jpg);
+    background-repeat: no-repeat;  
+}
+
+form {
+    justify-content: center;
+    width: 100%;
+    display:flex;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 90vh;
+    max-width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: auto;
+    color: rgb(112, 29, 29);
+}
+
+.app-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    opacity: 0.7;
+}
+
+input {
+    border: 2px solid #eee;
+    border-radius:12px;
+    
+}
+.input-item{
+    width: 300px;
+    box-shadow: grey;
+    height: 37px;
+}
+.input-space{
+    text-align: center;
+    margin-bottom: 20px;
+     
+}
+button{
+    color:brown;
+    font-family: inherit;
+    text-decoration: cadetblue;
+    font-weight: bold;
+    opacity: 0.7;
+    background-color:rgba(255, 255, 255, .15);
+    cursor: pointer;
+    width: 55px;
+    height: 36px;
+    border-radius: 10px;
+}
+button:hover{
+    color: whitesmoke;
+    background-color: brown;
+}
+
+.trash-btn,
+ .complete-btn {
+    background: brown;
+    color :lavenderblush;
+    border: none;
+    padding: 0.5rem; 
+    cursor: pointer;
+    font-size: 0.5rem;
+}
+.complete-btn {
+    background: rgb(91, 120, 121);
+}
+.trash-btn:hover{
+    opacity:0.8;
+}
+ .complete-btn:hover{
+     opacity: 0.8;
+ }
+
+.fa-trash,
+ .fa-check{
+    pointer-events: none;
+}
+
+.todo-stats {
+    display: flex;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background: rgb(99, 135, 136);
+    height: 5%;
+    opacity: 0.7;
+    width:100%;
+    word-spacing: 100px;
+  }
+
+.todos {
+    list-style: none;
+    margin-bottom: 25px;
+    
+}
+.todo {
+    margin: 0.5rem;
+    background: lavender;
+    color:brown;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li {
+    flex: 1;
+}
+.todo-list {
+    padding: 0rem 0.5rem;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearnace: none; 
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select{
+   margin: 0.5rem;
+   position: relative;
+   overflow: hidden;
+   border-radius: 5px;
+   
+}
+select{
+   color:brown;
+   width: 5rem;
+   cursor: pointer;
+   padding: 4px;
+   border-radius: 5px;
+   
+}
+.select::after {
+   content: "\25BC";
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 1rem;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+.select:hover::after {
+   background: wheat;
+   color: cadetblue; 
+}
+

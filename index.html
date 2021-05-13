@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png"/>
+    <title>DAMMY's Todo App</title>
+    
+</head>
+<body>
+    <main>
+       <!--<img src="images/image.jpg" alt="serene" class="center"> -->
+    <div class="container">
+        <h1 class="app-title">Dammy's Todo App</h1>
+        <div class="input-space">
+            <h5>...getting things done is the goal.</h5>   
+     </div>
+        <form class="todo-form">
+            
+          <!-- this is to enter in a todo -->
+    <input autofocus type="text" placeholder="What needs to be done?" class="input-item" />  
+    <button type="submit" class="button" >Add<i class="fas fa-square"></i>
+    </button>  
+    <div class="select">
+        <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+        </select>
+    </div>
+    
+</form>
+
+    <!-- this is to keep the list of todos -->
+        <ul class="todos"><div class="todo-stats">
+            <div class="total-tasks">
+              Total Tasks: <span>0</span>
+            </div>
+            <div class="completed-tasks">
+              Completed Tasks: <span>0</span>
+            </div>
+            <div class="remaining-tasks">
+              Remaining Tasks: <span>0</span>
+            </div>
+            <svg>
+              <use xlink:href="#stats"></use>
+            </svg>
+          </div>
+          <ol class="todo-list"></ol>
+        </div></ul> 
+    </div> 
+    </div>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
